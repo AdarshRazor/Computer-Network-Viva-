@@ -1,0 +1,82 @@
+51.	WHAT IS PING COMMAND?
+
+0->	The ping command is usually used as a simple way to verify that a computer can communicate over the network with another computer or network device. Ping works by sending an Internet Control Message Protocol (ICMP) Echo Request to a specified interface on the network and waiting for a reply.
+
+_________________________________________________________________________________________________________________________
+
+52.	How do you ping an IP address?
+
+_________________________________________________________________________________________________________________________
+
+53.	What are the different ping commands?
+
+0->	tracert, ipconfig, netstat, and nslookup.
+
+_________________________________________________________________________________________________________________________
+
+54.	What is the role of ping command?
+
+0->	The ping command is usually used as a simple way to verify that a computer can communicate over the network with another computer or network device. The ping command operates by sending Internet Control Message Protocol (ICMP) Echo Request messages to the destination computer and waiting for a response.
+
+_________________________________________________________________________________________________________________________
+
+55.	What is TCL used for?
+
+0->	A configuration file in NS2 is an OTCL file called “TCL Simulation script”. It also contains information about what we would like to simulate like node creation, also topology creation, setting up link etc. A TCL file is also an input configuration file for C++ file.
+
+_________________________________________________________________________________________________________________________
+
+56.	What is mean by TCL?
+
+0->	TCL is an interpreted language. Each instruction is a command in tcl program. TCL programming is used to write simulation script in ns2.
+	TCL is a file extension for a script written in TCL stands for Tool Command Language. ... TCL is a dynamic open source language used for building web and desktop applications.
+
+_________________________________________________________________________________________________________________________
+
+57.	What are the TCL commands?
+
+0-> commit, rollback, savepoint
+
+_________________________________________________________________________________________________________________________
+
+58.	What is meant by duplex communication?
+
+0->	duplex communication means that both ends of the communication can send and receive signals at the same time.
+	For example, on a local area network with a technology that has full-duplex transmission, one workstation can be sending data on the line while another workstation is receiving data.
+	An example of a full-duplex device is a telephone; the parties at both ends of a call can speak and be heard by the other party simultaneously
+
+_________________________________________________________________________________________________________________________
+
+59.	What is difference between full duplex and half duplex?
+
+0->	In half duplex mode, Sender can send the data and also can receive the data but one at a time. It is two-way directional communication but one at a time.
+	The half duplex mode provides less performance than full duplex.
+	Ex: walkie talkie
+	In full duplex mode, Sender can send the data and also can receive the data simultaneously. It is two-way directional communication simultaneously.
+	Full duplex provides better performance than simplex and half duplex mode.
+	Ex: telephone
+
+_________________________________________________________________________________________________________________________
+
+60.	What is full duplex example?
+
+0->	An example of a full-duplex device is a telephone; the parties at both ends of a call can speak and be heard by the other party simultaneously. The earphone reproduces the speech of the remote party as the microphone transmits the speech of the local party because there is a two-way communication channel between them, or more strictly speaking because there are two communication channels between them.
+
+_________________________________________________________________________________________________________________________
+
+61.	Is WiFi full duplex?
+
+0->	Wi-Fi cannot work as full-duplex. Wi-Fi uses unlicensed frequencies in the spectrum. It uses half duplex.
+
+_________________________________________________________________________________________________________________________
+
+62.	Is switch full duplex?
+
+0->	Switches allow full duplex communications, which means that both computers can send and receive data at the same time.
+
+_________________________________________________________________________________________________________________________
+
+63.	Are cell phones full duplex?
+
+0->	A cell phone is a full-duplex device. That means that you use one frequency for talking and a second, separate frequency for listening. Both people on the call can talk at once. 
+	Channels - A walkie-talkie typically has one channel, and a CB radio has 40 channels.

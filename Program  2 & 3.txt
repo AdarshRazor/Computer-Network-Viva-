@@ -1,0 +1,283 @@
+13.	Define duplex link?
+
+0->	Duplex connections allow two-way communication. Each type requires bandwidth, delay and type of queue for configuration.
+
+_________________________________________________________________________________________________________________________
+
+14.	Differentiate between simplex and duplex link.
+
+0-> Simplex connection allows one-way communication. Ex: Keyboard and monitor.
+    Duplex connection allow two-way communication. Ex: walkie talkies, telephones
+
+_________________________________________________________________________________________________________________________
+
+15.	Define UDP?
+
+0-> User Datagram Protocol. User Datagram Protocol is a connectionless communication protocol.
+ 	UDP is suitable for purposes where error checking and correction.
+	UDP is faster, simpler and more efficient
+	UDP has a 8 bytes fixed length header.
+	UDP is lightweight.
+	UDP is used by DNS, DHCP, TFTP, SNMP, RIP, and VoIP.
+
+_________________________________________________________________________________________________________________________
+
+16.	Define TCP?
+
+0->	Transmission control protocol is a connection-oriented protocol.
+	TCP provides extensive error checking mechanisms. It is because it provides flow control and acknowledgment of data.
+	TCP is comparatively slower
+	TCP has a (20-80) bytes variable length header.
+	TCP is heavy-weight.
+	TCP is used by HTTP, HTTPs, FTP, SMTP and Telnet.
+
+_________________________________________________________________________________________________________________________
+
+17.	Explain reliable and non reliable connection.
+
+0-> A reliable (TCP) service is one that notifies the user if delivery fails, while an unreliable (UDP) one does not notify the user if delivery fails. 
+	A reliable unicast protocol is also connection-oriented. For example, TCP is connection-oriented. For example, Internet Protocol (IP) provides an unreliable service.	
+
+_________________________________________________________________________________________________________________________
+
+18.	Give an example for reliable and non reliable connection.
+
+0->	A reliable unicast protocol is also connection-oriented. For example, TCP is connection-oriented. For example, Internet Protocol (IP) provides an unreliable service.	
+
+_________________________________________________________________________________________________________________________
+
+19.	Define CBR?
+
+0-> CBR [Constant bit rate] is mainly used in networking streaming applications as content can be transferred through limited channel capacity. 
+	CBR uses UDP for transferring packet. Ex: # Create a CBR traffic source and attach it to udp0 
+	
+	set cbr0 [new Application/Traffic/CBR] 
+	$cbr0 set packetSize_ 500 
+	$cbr0 set interval_ 0.005 
+	$cbr0 attach-agent $udp0	
+
+_________________________________________________________________________________________________________________________
+
+20.	Define FTP.
+
+0-> FTP is an application (and protocol) used for file transfer. It uses TCP for transport, but FTP is considered an application protocol.
+	FTP uses TCP for transferring packet
+
+_________________________________________________________________________________________________________________________
+
+21.	Which is the receiver agent for UDP
+
+0-> The UDP agent while the receiver node is attached to the Null agent.
+	#Connecting sending and receiving transport agents
+	$ns connect $udp $null
+
+_________________________________________________________________________________________________________________________
+
+22.	Which is the receiver agent for TCP
+
+0-> Transport agent (UDP) and application (CBR) are connected using the keyword “attach-agent”
+	# Attaching transport agent to application agent
+	$cbr attach-agent $udp
+
+_________________________________________________________________________________________________________________________
+
+23.	Give the Initialization setup command for the simulator
+
+0-> set ns [new Simulator]: generates an NS simulator object instance, and assigns it to variable ns
+	•  Initialize the packet format (ignore this for now) 
+	•  Create a scheduler (default is calendar scheduler) 
+	•  Select the default address format. The "Simulator" object has member functions that do the following:
+	•	Create compound objects such as nodes and links
+	•	Connect network component objects created (ex. attach-agent)
+	•	Set network component parameters (mostly for compound objects)
+	•	Create connections between agents (ex. make connection between a "tcp" and "sink")
+	•	Specify NAM display options
+
+_________________________________________________________________________________________________________________________
+
+24.	what is NAM
+
+0->	NAM (network animator) is a Tcl based animation tool for viewing network simulation traces. It supports topology layout, packet level animation, and various data inspection tools. It has a graphical interface, which can provide information such as number of packets drops at each link.
+	The nam trace file should contain topology information like nodes, links, queues, node connectivity etc as well as packet trace information.
+    set nf [open trace.nam w]
+    $ns namtrace-all $nf
+	"nf" is the file handler that we are used here to handle the trace file.
+	"w" means write i.e the file trace.nam is opened for writing.
+
+_________________________________________________________________________________________________________________________
+
+25.	What is Tcl
+
+0-> TCL is a file extension for a script written in TCL. TCL  stands for Tool Command Language.
+	It also contains information about what we would like to simulate like node creation, also topology creation, setting up link etc.
+
+_________________________________________________________________________________________________________________________
+
+26.	What is OCTL
+
+0-> Object TCL (OTCL) is an object oriented extension of TCL 
+	OTcl is written in C++ 
+	OTCLs library of objects can be extended by adding object definitions in the C++ source code
+	creates network objects and one (special) simulator object
+
+_________________________________________________________________________________________________________________________
+
+27.	Give syntax to create the node
+
+0-> set ns [new Simulator] ;
+	# Simulator instanceset node_(0) [$ns node]
+	Multiple nodes can be created:
+	set ns [new Simulator] ;# Simulator instance
+	set totalNodes 50 ;#Total Number of nodes in the network
+	for {set i 0} {$i < $totalNodes } { incr i }
+ 	{
+		set node_($i) [$ns node]
+	}
+
+_________________________________________________________________________________________________________________________
+
+28.	Give syntax to create the link
+
+0->	$ns simplex-link/duplex-link [node-instance1] [node-instance2] bandwidth delay Q-Type 
+	Ex:	 # Connect nodes for two-way communication
+		$ns duplex-link $n0 $n1 2Mb 5ms DropTail
+		# Connect nodes with asymmetric channel capacity
+		$ns simplex-link $n0 $n1 3Mb 2ms DropTail
+		$ns simplex-link $n1 $n0 2Mb 5ms DropTail
+
+_________________________________________________________________________________________________________________________
+
+29.	Give syntax to create the TCP & UDP agents
+
+0->	$ [simulator-instance] attach-agent [node-instance] [agent-instance]
+Ex:	# Create a object of TCP agent and assign it to variable agnt
+	$ set agnt [new Agent/TCP]
+	# Create a object of UDP agent and assign it to variable agnt1
+	$ set agnt1 [new Agent/UDP]
+  	# Assume node n0 and n1 already instantiated 
+	# ns is simulator instance
+	$ns attach-agent $n0 $agnt
+
+_________________________________________________________________________________________________________________________
+
+30.	Give syntax to create the node
+
+0->	set ns [new Simulator] ;
+	# Simulator instanceset node_(0) [$ns node]
+	Multiple nodes can be created:
+	set ns [new Simulator] ;# Simulator instance
+	set totalNodes 50 ;#Total Number of nodes in the network
+	for {set i 0} {$i < $totalNodes } { incr i } 
+	{
+		set node_($i) [$ns node]
+	}
+
+_________________________________________________________________________________________________________________________
+
+31.	 Give syntax to set the packet size of CBR & FTP
+
+0->	$cbr set packet_size_ 1000
+	$cbr set rate_ 1mb
+
+_________________________________________________________________________________________________________________________
+
+32.	Explain CBR and FTP
+
+0-> CBR [Constant bit rate] is mainly used in networking streaming applications as content can be transferred through limited channel capacity. CBR uses UDP for transferring packet.
+	FTP is an application (and protocol) used for file transfer. It uses TCP for transport, but FTP is considered an application protocol. FTP uses TCP for transferring packet
+
+_________________________________________________________________________________________________________________________
+
+33.	What is the need of calling finish{}
+	
+_________________________________________________________________________________________________________________________
+
+34.	How may output files are generating from simulator and why
+
+_________________________________________________________________________________________________________________________
+
+35.	Define Simulator
+
+0-> A program enabling a computer to execute programs written for a different operating system.
+
+_________________________________________________________________________________________________________________________
+
+36.	Why do you need “at” command
+
+_________________________________________________________________________________________________________________________
+
+37.	What is acknowledgement, in which connection it is defined.
+
+_________________________________________________________________________________________________________________________
+
+38.	List the connection oriented and connection less protocols.
+
+0->	TCP (Transmission Control Protocol) is a connection-oriented transport protocol, while UDP (User Datagram Protocol) is a connectionless network protocol. Both operate over IP.
+
+_________________________________________________________________________________________________________________________
+
+39.	What is packet drop where we can find the packet drop.
+
+0->	Packets will be dropped when content arrives for a sustained period at a given router or network segment at a rate is greater than it is possible to send through.
+	Packet drop occurs in TCP.
+
+_________________________________________________________________________________________________________________________
+
+40.	What is TELNET?
+
+0->	Telnet is an application protocol used on the Internet or local area network to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection.
+
+_________________________________________________________________________________________________________________________
+
+41.	Differentiate between TELNET and FTP
+
+0->	1.Telnet enables a client user to access the resources of a server remotely whereas FTP is used for copying a file from one to another machine. 
+	2.Remote Login is necessary in TELNE.Remote Login does not necessary in FTP.
+	1.TELNET stands for TELecommunication NETwork. 
+	2.FTP stands for File Transfer Protocol.
+
+_________________________________________________________________________________________________________________________
+
+42.	In which situation we will use TELNET
+
+_________________________________________________________________________________________________________________________
+
+43.	In which situation we will use FTP
+
+_________________________________________________________________________________________________________________________
+
+44.	Define droptail
+
+0->	It is a simple queue mechanism that is used by the routers that when packets should to be drop. In this mechanism each packet is treated identically and when queue filled to its maximum capacity the newly incoming packets are dropped until queue have sufficient space to accept incoming traffic.
+
+_________________________________________________________________________________________________________________________
+
+45.	List any 3 Queuing methods used in the simulation
+
+_________________________________________________________________________________________________________________________
+
+46.	Explain connect command
+
+0-> It is used to set up a connection between two agents or nodes.
+	Ex: $ns_ connect src dst.
+_________________________________________________________________________________________________________________________
+
+47.	What is command
+
+0->	a computer program to perform a specific task.The command $ns is used for using the functions belonging to the simulator class.
+
+_________________________________________________________________________________________________________________________
+
+48.	Define network.
+
+0->	network is a group of computers that use a set of common communication protocols over digital interconnections for the purpose of sharing resources
+
+_________________________________________________________________________________________________________________________
+
+49.	Why do we need network simulation
+
+0->	communication networks have become too complex for traditional analytical methods to provide an accurate understanding of system behavior, network simulators are used. In simulators, the computer network is modeled with devices, links, applications etc.
+
+_________________________________________________________________________________________________________________________
+
+50.	We will not find any packet drops in FTP and TELNET Why
