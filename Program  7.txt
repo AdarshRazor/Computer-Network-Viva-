@@ -1,0 +1,109 @@
+97.	Which can detect two bit errors?
+A.	Parity check
+B.	Cyclic redundancy check
+C.	Parity & Cyclic redundancy check
+D.	None of the mentioned
+ANSWER: B
+
+98.	CRC uses
+A.	Multiplication
+B.	Binary division
+C.	Multiplication & Binary division
+D.	None of the mentioned
+ANSWER: C
+
+99.	Which is more efficient?
+A.	Parity check
+B.	Cyclic redundancy check
+C.	Parity & Cyclic redundancy check
+D.	None of the mentioned
+ANSWER: B
+
+100.	How error detection and correction is done?
+A.	By passing it through equalizer
+B.	By passing it through filter
+C.	By amplifying it
+D.	By adding redundancy bits
+ANSWER: D
+
+101.	Which error detection method uses one's complement arithmetic?
+A.	Simple parity check
+B.	Two-dimensional parity check
+C.	CRC
+D.	Checksum
+ANSWER: D
+
+102.	Which error detection method consists of just one redundant bit per data unit?
+A.	Simple parity check
+B.	Two-dimensional parity check
+C.	CRC
+D.	Checksum
+ANSWER: A
+
+103.	What is added to data packet for error detection.
+A.	checksum bit
+B.	error bit
+C.	parity bit
+D.	both chescksum and parity bit
+ANSWER: D
+
+104.	Cyclic codes are fast when these are implemented in
+A.	software
+B.	hardware
+C.	Local area network
+D.	Both software and hardware
+ANSWER: D
+
+105.	Process of modulo-2 binary division is the same as the familiar
+A.	Multiplication process
+B.	division process
+C.	addition process
+D.	subtraction process
+ANSWER: B
+
+106.	CRC stands for
+A.	combine resistance check
+B.	cyclic redundancy code
+C.	Combine redundancy code
+D.	cyclic redundancy check
+ANSWER: D
+
+107.	Traditionally, Internet checksum is
+A.	8-bit
+B.	16-bit
+C.	24-bit
+D.	32-bit
+ANSWER: B
+
+108.	If value of checksum is 0, then message is
+A.	accepted
+B.	rejected
+C.	sent back
+D.	resend
+ANSWER: A
+
+109.	If generator of cyclic code has at least two terms and rightmost bit is 1 then error cannot be divided by
+A.	syndrome
+B.	error
+C.	dataword
+D.	generator
+ANSWER: D
+
+110.	What is the legth of divisor if the degree of polynomial is n.
+A.	n
+B.	n+1
+C.	n-1
+D.	2n
+ANSWER: B
+
+111.	What is the number of divisor bits for 16-bit CRC.
+A.	17
+B.	16
+C.	15
+D.	32
+ANSWER: A
+
+112.	CRC can be applied only for error detection.
+A.	True
+B.	False
+ANSWER: A

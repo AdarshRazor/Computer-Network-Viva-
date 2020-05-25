@@ -1,0 +1,83 @@
+1.	_____ LAN topology describes the possible connections between pairs of networked end-points that can communicate.
+a)	Complex
+b)	Physical
+c)	Logical
+d)	Incremental
+ANSWER: C
+
+2.	A term that refers to the way in which the nodes of a network are linked together.
+a)	network
+b)	topology
+c)	connection
+d)	interconnectivity
+ANSWER: B
+
+3.	A network comprising of multiple topologies.
+a)	Complex
+b)	Hybrid
+c)	Bus
+d)	Star
+ANSWER: B
+
+4.	The participating computers in a network are referred to as:
+a)	Clients
+b)	Servers
+c)	Nodes
+d)	CPUs
+ANSWER: C
+
+5.	Which of the following isn’t a type of transmission mode?
+a)	physical
+b)	simplex
+c)	full duplex
+d)	half duplex
+ANSWER: A
+
+6.	A transmission mode that can transmit data in both the directions at the same time.
+a)	simplex
+b)	half duplex
+c)	full duplex
+d)	semi-duplex
+ANSWER: C
+
+7.	A walkie-talkie operates in ____________
+a)	simplex
+b)	half duplex
+c)	full duplex
+d)	semi-duplex
+ANSWER: B
+
+8.	Telephone networks operate in this mode.
+a)	simplex
+b)	half duplex
+c)	full duplex
+d)	semi-duplex
+ANSWER: C
+
+9.	A topology that is responsible for describing the geometric arrangement of components that make up the LAN.
+a)	Complex
+b)	Physical
+c)	Logical
+d)	Incremental
+ANSWER: B
+
+10.	Components used for interconnecting dissimilar networks that use different communication protocols.
+a)	Switches
+b)	Gateways
+c)	Routers
+d)	Bridges
+ANSWER: B
+
+11.	Components that operate at the network layer of the OSI model.
+a)	Switches
+b)	Servers
+c)	Routers
+d)	Gateways
+ANSWER: C
+
+12.	Connecting two or more networks to form a single network is called :
+a)	Internetworking
+b)	Intranetworking
+c)	Interconnecting
+d)	Intraconnectivity
+ANSWER: A
