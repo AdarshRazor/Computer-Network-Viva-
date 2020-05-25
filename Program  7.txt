@@ -1,6 +1,6 @@
 97.	Which can detect two bit errors?
 A.	Parity check
-*B.	Cyclic redundancy check*
+B.	**Cyclic redundancy check**
 C.	Parity & Cyclic redundancy check
 D.	None of the mentioned
 ANSWER: B
