@@ -1,0 +1,66 @@
+152. Define FIFO ?
+
+0->  An acronym for first in, first out – in computing and in systems theory, is a method for organising the manipulation of a data structure 
+	
+_________________________________________________________________________________________________________________________
+
+153. What is the significance of popen - pclose sequence?
+
+0->  1. The popen() function opens a process by creating a pipe, forking, and invoking the shell. Since a pipe is by definition unidirectional, the type argument may specify only reading or writing, not both; the resulting stream is correspondingly read-only or write-only.
+	 2. The pclose() function waits for the associated process to terminate and returns the exit status of the command as returned by wait
+
+_________________________________________________________________________________________________________________________
+
+154. Explain the functionality steps of client process at message queues.
+
+0->  The client process obtains input from the keyboard and sends it via a message queue to the server. The server reads the message from the queue, manipulates the message by converting all alphabetic text in the message to uppercase, and places the message back in the queue for the client to read.
+
+_________________________________________________________________________________________________________________________
+
+155. Explain the functionality steps of Server process at message queues.
+
+0->  A server process (program) fulfils the client request by performing the task requested. Server programs generally receive requests from client programs, execute database retrieval and updates, manage data integrity and dispatch responses to client requests.
+
+_________________________________________________________________________________________________________________________
+
+156. Define inter process communication.
+
+0->  Inter process communication (IPC) is a mechanism which allows processes to communicate each other and synchronize their actions. The communication between these processes can be seen as a method of co-operation between them. Processes can communicate with each other using these two ways: Shared Memory. Message passing.
+
+_________________________________________________________________________________________________________________________
+
+157. Suggest the command used to create a named pipe.
+
+0->  mknod command
+
+_________________________________________________________________________________________________________________________
+
+
+158. Responsibility of open system call?
+
+0->  The open() system call is used to provide access to a file in a file system. This system call allocates resources to the file and provides a handle that the process uses to refer to the file. A file can be opened by multiple processes at the same time or be restricted to one process.
+
+_________________________________________________________________________________________________________________________
+
+159. Responsibility of write system call?
+
+0->  The write() system call writes the data from a user buffer into a device such as a file. ... In general, the write() system calls takes three arguments i.e. the file descriptor,the pointer to the buffer where data is stored and the number of bytes to write from the buffer
+
+_________________________________________________________________________________________________________________________
+
+160. Responsibility of read system call?
+
+0->  read() system call is used to access data from a file that is stored in the file system. ... In general, the read() system calls takes three arguments i.e. the file descriptor, the buffer which stores read data and the number of bytes to be read from the file.
+
+_________________________________________________________________________________________________________________________
+
+161. Significance of fdopen system call
+
+0-> The fopen() function opens the file whose name is the string pointed to by path
+
+
+
+
+
+
+

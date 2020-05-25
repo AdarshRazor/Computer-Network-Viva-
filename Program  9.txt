@@ -1,0 +1,86 @@
+143. What is Socket
+
+0->  A socket is one endpoint of a two-way communication link between two programs running on the network. A socket is bound to a port number so that the TCP layer can identify the application that data is destined to be sent to. An endpoint is a combination of an IP address and a port number.
+
+_________________________________________________________________________________________________________________________
+
+144. What are the parameters of socket ()?
+
+0->  Ther are 3 parameters of socket() 
+	 1. bind() - network address format that the socket understands. Currently, it must be AF_INET (IP address)
+	 2. listen() - persistence of the connection that can be formed through this socket, in SOCK_STREAM
+	 3. accept() - messaging protocol, which is closely related to the socket type. four acceptable values (0, IPPROTO_TCP, IPPROTO_UDP, and IPPROTO_ICMP)
+
+_________________________________________________________________________________________________________________________
+
+145. Describe bind (), listen (), accept (), connect (), send () and recv ().
+
+0->  bind(), listen(), accept() is established on the listner side. connect() on the client side and 2 machine can talk through send() and recv().
+	 1. connect() - depends on the type of socket thats passed as the first parameter
+	 2. send() - sends the packets or the information
+	 3. recv() - recieves the packets or the information
+
+_________________________________________________________________________________________________________________________
+
+146.  What are system calls? Mention few of them.
+
+0->  programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on.
+	 
+	 https://www.geeksforgeeks.org/introduction-of-system-call/ -> examples of all
+
+_________________________________________________________________________________________________________________________
+
+147.  What is IPC? Name three techniques.
+
+0->   Inter-process communication, mechanisms an operating system provides to allow the processes to manage shared data.
+	  1. Pipes
+	  2. Names Pipes
+	  3. Message Queuing
+	  4. Semaphone
+	  5. Shared Meory
+	  6. Scokets
+
+	  https://www.geeksforgeeks.org/methods-in-interprocess-communication/ -> explaination
+
+_________________________________________________________________________________________________________________________
+
+148.  Differentiate between socket and pipes?
+
+0->   A socket is a part of the OSI model that enables communication between different layers. Pipes are used in processing in the CPU. 
+	  Communication in socket is bi directional while its unidirectional in pipes. 
+	  Pipes increase productivity By processing multiple processes simultaneously.
+
+_________________________________________________________________________________________________________________________
+
+149.  What are the steps for establishing tcp socket on the client side?
+
+0->   1. Create a socket using the socket() function;
+      2. Connect the socket to the address of the server using the connect() function;
+      3. Send and receive data by means of the read() and write() functions.
+
+_________________________________________________________________________________________________________________________
+
+150.  What are the steps for establishing tcp socket on the server side?
+  
+0->   1. Create a socket with the socket() function;
+      2. Bind the socket to an address using the bind() function;
+      3. Listen for connections with the listen() function;
+      4. Accept a connection with the accept() function system call. This call typically blocks until a client connects with the server.
+      5. Send and receive data by means of send() and receive().
+
+_________________________________________________________________________________________________________________________
+
+151.  What is the use of bind() function?
+
+0->  Ther are 3 parameters of socket() 
+	 1. bind() - network address format that the socket understands. Currently, it must be AF_INET (IP address)
+
+_________________________________________________________________________________________________________________________
+
+152.  What is the use of  listen() function? 
+
+0->  Ther are 3 parameters of socket() 
+
+	 1. listen() - persistence of the connection that can be formed through this socket, in SOCK_STREAM
+	 
+_________________________________________________________________________________________________________________________

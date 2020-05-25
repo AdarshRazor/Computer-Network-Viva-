@@ -1,0 +1,97 @@
+164.	Define cryptography?
+
+0->		In computer science, cryptography refers to secure information and communication techniques derived from mathematical concepts and a set of rule-		based calculations called algorithms, to transform messages in ways that are hard to 		decipher.
+
+_________________________________________________________________________________________________________________________
+
+165.	How do you classify cryptographic algorithms?
+
+0-> 	Symmetric 
+		Asymmetric 
+
+_________________________________________________________________________________________________________________________
+
+166.	Compare and contrast symmetric key cryptography and asymmetric key cryptography?
+
+0->		Symmetric key cryptography is a type of cryptography in which the single common key is used by both sender and receiver for the purpose of encryption and decryption of a message. This system is also called private or secret key cryptography and AES (Advanced Encryption System) is the most widely uses symmetric key cryptography. The symmetric key system has one major drawback that the two parties must somehow exchange the key in a secure way as there is only one single key for encryption as well as decryption process.
+		Types: AES (Advanced Encryption Standard), DES, Triple DES, RC2, RC4, RC5, IDEA, Blowfish, Stream cipher, Block cipher, etc. are the types of symmetric key cryptography.
+
+		Asymmetric Key Cryptography is completely different and a more secure approach than symmetric key cryptography. In this system, every user uses two keys or a pair of keys (private key and public key) for encryption and decryption process. Private key is kept as a secret with every user and public key is distributed over the network so if anyone wants to send message to any user can use those public keys. Either of the key can be used to encrypt the message and the one left is used for decryption purpose. Asymmetric key cryptography is also known as public key cryptography and is more secure than symmetric key. RSA is the most popular and widely used asymmetric algorithm.
+		Types: RSA, DSA, PKCs, Elliptic Curve techniques, etc. are the common types of asymmetric key cryptography.
+
+_________________________________________________________________________________________________________________________
+
+167.	What is encryption and decryption?
+
+0-> 	Encryption:The process of converting information or data into a code, especially to prevent unauthorized access
+
+		Decryption:Decryption is the process of taking encoded or encrypted text or other data and converting it back into text that you or the computer can read and understand.
+
+_________________________________________________________________________________________________________________________
+
+168.	What is the fullform of RSA
+
+0->		Rivest Shamir and Adleman
+
+_________________________________________________________________________________________________________________________
+
+169.	Define the following terms
+
+0->		1. Plaintext - Plaintext is a term used in cryptography that refers to a message before encryption or after decryption.
+		2. Cipher text - Encrypted message
+		3. Substitution - In cryptography, a substitution cipher is a method of encrypting by which units of plaintext are replaced with ciphertext, according to a fixed system; the "units" may be single letters (the most common), pairs of letters, triplets of letters, mixtures of the above, and so forth.
+		4. Transposition - In cryptography, a transposition cipher is a method of encryption by which the positions held by units of plaintext (which are commonly characters or groups of characters) are shifted according to a regular system, so that the ciphertext constitutes a permutation of the plaintext. That is, the order of the units is changed (the plaintext is reordered).
+
+_________________________________________________________________________________________________________________________
+
+175.	Define cryptanalysis
+
+0->		The process of attempting to discover the plain text or key is known as Cryptanalysis
+
+_________________________________________________________________________________________________________________________
+
+176.	Suggest the 3 stages (key generation, Encryption, Decryption) of RSA algorithm	
+	
+0->		Already explained in 176 and 177 just study key generation from notes
+
+_________________________________________________________________________________________________________________________
+
+177.	Explain key generation process of RSA
+
+0->		Image(RSA.jpeg)
+
+_________________________________________________________________________________________________________________________
+
+178.	Explain the formulae used to generate a cipher text.
+
+0-> 	Image(RSA.jpeg)
+
+_________________________________________________________________________________________________________________________
+
+179.	Explain decryption process of RSA algorithm.
+
+0-> 	Image(RSA.jpeg)
+
+_________________________________________________________________________________________________________________________
+
+180.	Is RSA symmetric key cryptography or asymmetric key cryptography?
+		
+0->		Asymmetric
+
+_________________________________________________________________________________________________________________________
+
+181.	What are the applications of RSA?
+
+0->		Digital signature
+
+_________________________________________________________________________________________________________________________
+
+182.	Suggest any 2 symmetric key cryptographic algorithms
+
+0->		AES,DES
+
+_________________________________________________________________________________________________________________________
+
+183.	Suggest any 2 Asymmetric key cryptographic algorithms
+
+0->		RSA,DSA
