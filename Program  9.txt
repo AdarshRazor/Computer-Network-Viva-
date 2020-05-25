@@ -1,6 +1,8 @@
 143. What is Socket
 
-0->  A socket is one endpoint of a two-way communication link between two programs running on the network. A socket is bound to a port number so that the TCP layer can identify the application that data is destined to be sent to. An endpoint is a combination of an IP address and a port number.
+0->  A socket is one endpoint of a two-way communication link between two programs running on the network. A socket is bound to a port 
+number so that the TCP layer can identify the application that data is destined to be sent to. An endpoint is a combination of an IP 
+address and a port number.
 
 _________________________________________________________________________________________________________________________
 
@@ -9,13 +11,15 @@ ________________________________________________________________________________
 0->  Ther are 3 parameters of socket() 
 	 1. bind() - network address format that the socket understands. Currently, it must be AF_INET (IP address)
 	 2. listen() - persistence of the connection that can be formed through this socket, in SOCK_STREAM
-	 3. accept() - messaging protocol, which is closely related to the socket type. four acceptable values (0, IPPROTO_TCP, IPPROTO_UDP, and IPPROTO_ICMP)
+	 3. accept() - messaging protocol, which is closely related to the socket type. four acceptable values 
+	 (0, IPPROTO_TCP, IPPROTO_UDP, and IPPROTO_ICMP)
 
 _________________________________________________________________________________________________________________________
 
 145. Describe bind (), listen (), accept (), connect (), send () and recv ().
 
-0->  bind(), listen(), accept() is established on the listner side. connect() on the client side and 2 machine can talk through send() and recv().
+0->  bind(), listen(), accept() is established on the listner side. connect() on the client side and 2 machine can talk through 
+send() and recv().
 	 1. connect() - depends on the type of socket thats passed as the first parameter
 	 2. send() - sends the packets or the information
 	 3. recv() - recieves the packets or the information
